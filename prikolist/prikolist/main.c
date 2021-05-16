@@ -5,14 +5,12 @@
 
 int main(void) {
 	int n;
-	int m;
-	int h;
+	float m;
 	setlocale(LC_CTYPE, "ru");//п1дключення п1дтримки кирилиці української мови//
 	printf("\nввед1ть число n=");
 	scanf("%d", &n);
-	m = n / 60;
-	h = n / 3600;
-	printf("\t m \t h \n");
-	printf("\t%d\t%d\n", m, h);
+	m =(float) n / 60;
+	printf("\t m \n");
+	printf("\t %.2f \n", m);
 	return 0;
 }
